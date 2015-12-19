@@ -1,0 +1,25 @@
+{
+  "name": "ng-strict-di",
+  "version": "0.0.0",
+  "description": "patch for angular 1.2 for DI warnings",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "babel src -d dist"
+  },
+  "keywords": [
+    "utils",
+    "angular",
+    "patch",
+    "ngStrictDI"
+  ],
+  "author": "Anton Telesh <a.telesh@smcs.com.ua>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-plugin-syntax-class-properties": "^6.1.18",
+    "babel-plugin-syntax-decorators": "^6.1.18",
+    "babel-plugin-transform-class-properties": "^6.2.2",
+    "babel-plugin-transform-runtime": "^6.1.18",
+    "babel-preset-es2015": "^6.1.18"
+  }
+}
