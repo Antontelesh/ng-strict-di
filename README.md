@@ -3,6 +3,13 @@
 Angular patch to warn when no `$inject` is defined.
 Usable for angular 1.2, where native `ngStrictDI` mode is not available.
 
+## Installation
+
+The package can be simply installed via npm:
+
+```
+npm install ng-strict-di --save
+```
 
 ## Usage
 
