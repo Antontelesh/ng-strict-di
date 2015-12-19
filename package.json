@@ -20,6 +20,7 @@
   "author": "Anton Telesh <a.telesh@smcs.com.ua>",
   "license": "MIT",
   "devDependencies": {
+    "babel-eslint": "^4.1.6",
     "babel-plugin-syntax-class-properties": "^6.1.18",
     "babel-plugin-syntax-decorators": "^6.1.18",
     "babel-plugin-transform-class-properties": "^6.2.2",
