@@ -1,9 +1,9 @@
 import {ensureInject} from './ensureInject';
 
-function patchNamedResource(resource) {
+export function patchNamedResource(resource) {
   if (!resource) return;
   return function (name, ctor) {
     ensureInject(ctor);
-    return resource(name, ctor);
+    return resource.apply(this, arguments);
   };
 }

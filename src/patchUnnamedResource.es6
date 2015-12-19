@@ -4,6 +4,6 @@ export function patchUnnamedResource (resource) {
   if (!resource) return;
   return function (ctor) {
     ensureInject(ctor);
-    return resource(ctor);
+    return resource.apply(this, arguments);
   };
 }
