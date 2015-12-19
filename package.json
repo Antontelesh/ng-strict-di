@@ -13,6 +13,10 @@
     "patch",
     "ngStrictDI"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Antontelesh/ng-strict-di.git"
+  },
   "author": "Anton Telesh <a.telesh@smcs.com.ua>",
   "license": "MIT",
   "devDependencies": {
