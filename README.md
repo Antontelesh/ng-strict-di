@@ -13,15 +13,19 @@ npm install ng-strict-di --save
 
 ## Usage
 
-This module exports only one function named `patch`.
-The function accepts only one argument — `angular`.
+This module exports only one function named `ngStrictDI`.
+The function accepts only one argument — `angular` and registers new angular module,
+returning its name.
+
 It modifies `angular.module` API, so use it only in development environment.
 
 ## Example
 
 ```
-import {patch} from 'ng-strict-di';
+import {ngStrictDI} from 'ng-strict-di';
 
-// here `angular` is a global variable
-patch(angular);
+angular.module('MyModule', [
+  ngStrictDI(angular),
+  // your dependencies here
+])
 ```
